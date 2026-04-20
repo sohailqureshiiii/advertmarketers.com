@@ -1,0 +1,1945 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  /* --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", ; */
+
+  /* --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+
+  /* --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  /* overflow-x: hidden; */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h3 {
+  display: block;
+  /* font-size: 1.17em; */
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+li {
+  list-style: none;
+}
+/* ------------ Navbar ---------  */
+
+.background-for-home-navigationbar {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  position: fixed;
+  backdrop-filter: saturate(180%) blur(5px);
+  top: 0;
+  width: 100%;
+  z-index: 101;
+}
+
+.layout-box-fr-navigation-sub-bx {
+  width: 80em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.layout-box-fr-logo-in-jdwla {
+  padding-top: 0px;
+}
+
+.ul-list-for-navtion-at-home-screen-ajk {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+
+.nav-tabs-links-at-Homescreen {
+  padding: 10px 25px 10px 28px;
+  color: #f67d48;
+  font-size: 1px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.Inactive-nav-tabs-links-at-Homescreen {
+  padding: 10px 25px 10px 28px;
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.left-first-image-at-top-section-of-websites-sd {
+  width: 600px;
+}
+
+.internal-box-for-drop-down-in-navbar {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  gap: 5em;
+}
+
+.header-at-drp-dwn-at-navbar {
+  font-size: 18px;
+  padding-bottom: 20px;
+  color: #000;
+}
+
+.list-of-under-services-at-dropdwn {
+  font-size: 16px;
+  padding-bottom: 15px;
+  color: rgb(43 43 43 / 66%);
+  cursor: pointer;
+}
+
+.btn-at-homepage-navbar-jsd {
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 1px solid #f67d48;
+  font-size: 16px;
+  background: none;
+  color: #fff;
+  box-shadow: 0 0 0 #fec1958c;
+  display: block;
+  cursor: pointer;
+  background: #f67d48;
+  letter-spacing: 1px;
+}
+.display-none-at-hamburger-iohs {
+  display: none;
+}
+
+.extra-padding-for-botom-third-sections {
+  padding-top: 85px;
+}
+
+.vsion-and-aim-padding-top-extra {
+  padding-top: 115px;
+}
+
+/* --------- Input ----------  */
+
+.title-for-input-atha {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.Input-for-contact-andother-compo {
+  border-radius: 5px;
+  margin: 10px 0px;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 10px;
+  border: 1px solid #707070;
+  width: 100%;
+}
+/* ------- Dropdown ------  */
+
+.headerDropdownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.headerDropdownContainer:hover .dropdown {
+  display: block;
+}
+.dropdown {
+  right: 292px;
+  position: absolute;
+  width: 60em;
+  transform: translateX(50%);
+  padding: 15px;
+  /* background: #000; */
+  z-index: 101;
+  display: none;
+  top: 20px;
+}
+.upArrowContainer {
+  position: relative;
+  width: 100%;
+  height: 10px;
+}
+.upArrow {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ffffff;
+  left: 47%;
+  transform: translateX(-50%);
+}
+.dropdownMenu {
+  background: #fff;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 2px;
+  -webkit-animation: conditionalOpen 1s normal forwards ease-in-out;
+  -moz-animation: conditionalOpen 1s normal forwards ease-in-out;
+  animation: conditionalOpen 1s normal forwards ease-in-out;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+.headerDropdownMenu {
+  margin: 0;
+  padding: 0;
+  border-bottom-left-radius: 5px;
+  background: #0000000f;
+  border-bottom-right-radius: 5px;
+}
+.headerDropdownMenu li {
+  list-style: none;
+}
+.headerDropdownMenu li a {
+  display: block;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  color: #212121;
+  text-decoration: none;
+}
+.headerDropdownMenu li a:hover {
+  background-color: #004c3f;
+  color: #000;
+  cursor: pointer;
+  padding: 15px 20px;
+}
+
+/* ------------- navbaar Model -------------  */
+
+.modalFixedBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+.Container-of-mobile-navigationbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f67d48;
+  z-index: 101;
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.419);
+  overflow-x: scroll;
+  -webkit-animation: conditionalOpen 1s normal forwards ease-in-out;
+  -moz-animation: conditionalOpen 1s normal forwards ease-in-out;
+  animation: conditionalOpen 1s normal forwards ease-in-out;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.flx-in-logo-and-links-of-pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flx-in-logo-and-links-of-pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pad-at-navigatoio-bxds {
+  padding: 20px;
+}
+.links-for-mobile-view-innavbar-modla {
+  padding: 15px 0px;
+  border-bottom: 1px solid #ffffff38;
+  color: #fff;
+  font-size: 18px;
+}
+.brdr-tp-adk {
+  border-top: 1px solid #ffffff38;
+}
+.header-at-drp-dwn-at-navbar {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.white-clroisj {
+  color: #fff;
+}
+.lets-connect-atmobile-view-sect {
+  display: none;
+}
+
+.lx-in-ul-plus-list {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+/* ------- Home screen ------  */
+
+.extra-tp-marg-insdj {
+  margin-top: 5em;
+}
+.displayflexat-ns {
+  display: flex;
+  justify-content: center;
+}
+.header-layout-at-main-section {
+  padding-top: 30px;
+  width: 80em;
+}
+
+.flx-of-two-coloms-in-mainsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* @keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+} */
+/* animation-delay: 0s; */
+
+.animate--fast {
+  animation-duration: 0.6s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.animate--slow {
+  animation-duration: 1.1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+.animate--slowtwo {
+  animation-duration: 1.6s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.header-of-h-one-tag {
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: -1px;
+  animation-name: slideInLeft;
+  animation-timing-function: ease-in;
+  /* transform: translateX(-150px); */
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 8s linear infinite;
+  display: inline-block;
+}
+
+.para-of-main-section-at-first {
+  margin-top: 25px;
+  letter-spacing: -0.5px;
+  font-size: 22px;
+  color: #000;
+  animation-name: slideInLeft;
+  animation-timing-function: ease-in;
+  /* transform: translateX(-150px); */
+}
+
+.disply-flx-at-buttons-section-at-main {
+  margin-top: 2em;
+  display: flex;
+  gap: 2em;
+}
+.contact-us-btn-at-buttons-sections {
+  font-weight: 500;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 1px solid #f67d48;
+  font-size: 16px;
+  color: #fff;
+  box-shadow: 0 0 0 #fec1958c;
+  display: block;
+  cursor: pointer;
+  background: #f67d48;
+  padding: 15px 45px;
+  font-size: 20px;
+}
+
+.know-more-btln-at-main-section-home {
+  font-weight: 500;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 1px solid #f67d48;
+  font-size: 16px;
+  color: #f67d48;
+  box-shadow: 0 0 25px #fec1958c;
+  display: block;
+  cursor: pointer;
+  background: #fff;
+  padding: 15px 45px;
+  font-size: 20px;
+}
+
+.section-header-at-home-page-view {
+  color: #f67d48;
+  font-size: 25px;
+}
+
+.border-of-bottom-at-section-header {
+  width: 128px;
+  height: 3px;
+  background: #f67d48;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.header-number-two-at-secound-section {
+  font-size: 68px;
+  line-height: 70px;
+  letter-spacing: -3px;
+}
+
+.header-number-two-mobile-view-sect {
+  display: none;
+}
+
+.para-at-secound-section-who-are-in-main-homepage {
+  line-height: 30px;
+  margin-top: 25px;
+  letter-spacing: -0.5px;
+  font-size: 18px;
+  color: #000;
+}
+
+.margin-top-at-secound {
+  margin-top: 30px;
+}
+
+.third-section-of-third-para-at-hd {
+  font-size: 32px;
+  margin-top: 30px;
+  line-height: 50px;
+}
+
+.flx-direction-of-number-of-achivements {
+  display: flex;
+  padding-top: 30px;
+}
+
+.header-at-third-section-part-achivemnts {
+  font-size: 53px;
+  line-height: 55px;
+  padding-right: 30px;
+}
+
+.container-with-left-border-and-intenal-padd {
+  padding-right: 40px;
+  border-radius: 0px;
+  border-left: 3px solid #f67d48;
+  padding-left: 15px;
+}
+
+.paara-header0-at-nubers-sect-ion-sdf {
+  font-size: 70px;
+  color: #f67d48;
+  font-weight: 700;
+}
+
+.flx-direction--at-numbers-section-sffa {
+  display: flex;
+}
+
+.extra-border-with {
+  width: 238px;
+  height: 3px;
+  background: #f67d48;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.backgroud-orange-at-fourth-section-in-os {
+  background: #f67d48;
+  margin-top: 45px;
+}
+
+.para-at-vision-sjks-sknd {
+  padding-top: 15px;
+  font-size: 22px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.header-of-our-vision-white-clor {
+  font-size: 30px;
+  color: #fff;
+}
+
+.border-section-white-down-at-vison {
+  margin-top: 10px;
+  width: 150px;
+  background: #fff;
+  height: 3px;
+}
+
+.padding-bottom-at-orangesec {
+  padding: 60px 0px;
+}
+
+.flx-for-misson-and-vison-section-area {
+  display: flex;
+  gap: 8em;
+}
+
+.flx-for-three-rows-in-whatmakesdifferent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 3em;
+}
+
+.flx-direction-for-third-scound-section {
+  flex-direction: row-reverse;
+}
+
+.third-section--header-at-makes-diff {
+  font-size: 46px;
+  line-height: 63px;
+  letter-spacing: -3px;
+  padding-right: 30px;
+}
+
+.para-at-third-section-of-whatmakesusdiff {
+  line-height: 30px;
+  margin-top: 15px;
+  letter-spacing: -0.5px;
+  font-size: 18px;
+  color: #000;
+}
+
+.background-gradient-for-flex-hjsd {
+  background: linear-gradient(88deg, #f67d48, #fff);
+  margin: 150px 0px 100px 0px;
+}
+
+.bringyour-header-at-contactsection {
+  font-size: 46px;
+  letter-spacing: -3px;
+  padding-right: 30px;
+  color: #000;
+}
+
+.get-in-touch-header-at-sj {
+  font-size: 46px;
+  /* line-height: 63px; */
+  letter-spacing: -3px;
+  padding-right: 30px;
+  color: #000;
+}
+
+.doen-para-at-call-us-nwos {
+  font-weight: 600;
+  font-size: 28px;
+  padding-right: 30px;
+  color: #000;
+  margin-top: 1em;
+}
+.small-para-at-contact-i-now-asx {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 28px;
+  padding-right: 30px;
+  color: #000;
+}
+
+.clasdi-sjds-sdnd {
+  align-items: center;
+}
+
+.padd-inde-sjkds {
+  padding-bottom: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.width-large-at-vos {
+  width: 307px;
+  height: 3px;
+  background: #f67d48;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.cntr-btwn-lines-at-faq-sec {
+  border-radius: 50px;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  height: 2px;
+  background: #f67d48;
+}
+
+.flx-fr-faq-questionand-plus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.white-txt-at-faq-sect {
+  color: #000;
+  font-size: 22px;
+}
+
+.cntr-btwn-lines-at-faq-sec {
+  border-radius: 50px;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  height: 2px;
+  background: #f67d48;
+}
+.flx-fr-faq-questionand-plus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.extralarge-font {
+  font-size: 48px;
+  color: #f67d48;
+}
+
+.got-ques-header-at-faqs {
+  font-size: 46px;
+  line-height: 63px;
+  letter-spacing: -3px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.back-grond-for-footer-at-bottom-end {
+  background: #f67d48;
+}
+
+/* -------------- Footer _-------------- */
+
+.padding-toop-for-footer {
+  margin-top: 14em;
+}
+
+.flxin-for-sdfg {
+  display: flex;
+  padding-bottom: 45px;
+}
+.white-box-with-background-on-footer-left {
+  border: 1px solid -btn-at-bo#000;
+  background: #fff;
+  padding: 40px 70px 40px 40px;
+  margin-top: -10em;
+  border-radius: 10px;
+}
+
+.header-at-footer-for-company-logo {
+  margin-top: 0.5em;
+  font-size: 32px;
+}
+
+.secound-para-header-at-footer-line {
+  font-size: 22px;
+  margin-top: 10px;
+  color: #3d3d3d;
+}
+
+.secound-para-header-at-footer-line {
+  font-size: 22px;
+  margin-top: 10px;
+  color: #3d3d3d;
+  padding-bottom: 5px;
+}
+
+.folow-us-header-at-footer-in-botttom {
+  margin-top: 1em;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.flx-in-for-follow-btn-at-bottom-last-end {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.padding-for-the-adress-and-other-opt-at-footer {
+  padding: 3em 3em 0em 3em;
+}
+
+.adress-header-at-bottom-footer {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 1em;
+}
+
+.adress-para-at-footer-sd {
+  color: #3d3d3d;
+  font-size: 16px;
+  margin-top: 0px;
+  line-height: 25px;
+}
+
+.flx-in-email-and-call-for-footer {
+  display: flex;
+  gap: 2em;
+}
+
+.usefull-links-in-fotters-sectios-cjhs {
+  font-size: 23px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.botom-line-of-luse-fil-links-snidr {
+  border-radius: 15px;
+  width: 117px;
+  height: 5px;
+  background: #fff;
+  margin-bottom: 2em;
+}
+.links-name-at-footer-secctions-djs {
+  padding-bottom: 15px;
+  font-size: 18px;
+  color: #0000009c;
+  cursor: pointer;
+}
+
+.links-name-at-footer-secctions-djs:hover {
+  padding-bottom: 15px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+
+.flx-in-use-full-loink-and-servoces {
+  display: flex;
+  gap: 3em;
+}
+
+.wid-sjdkf-wfw-wjepfw-rwsd {
+  width: 80em;
+}
+
+.big-width-border-at-vskjskmf-dkf {
+  width: 100%;
+  height: 3.5px;
+  background-color: #fffc;
+  margin-bottom: 2em;
+  border-radius: 15px;
+}
+.flx-for-img-and-office-country {
+  display: flex;
+  gap: 15px;
+}
+.service-header-at-footer-section {
+  padding-bottom: 15px;
+  color: #000000bf;
+  font-size: 22px;
+}
+
+.dis-dss-sddjk-webksd-zcnd {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+.udsjdoicsklslkm {
+  text-align: center;
+  padding-bottom: 2em;
+}
+/* ------- About us Page _-------------- */
+
+.background-image-for-about-us-page-in-advet-marketers {
+  background-image: url("../public/colleagues-giving-fist-bump.jpg");
+  height: 43em;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+.hone-large-title-fr-hdr-in-main-layout {
+  color: #171717;
+  text-align: center;
+  line-height: 105px;
+  /* font-size: 70px; */
+  font-weight: 700;
+  letter-spacing: -5px;
+  font-size: 85px;
+}
+
+.para-at-main-layout-atnew-sec {
+  color: #666;
+  text-align: center;
+  font-size: 26px;
+  padding: 0em 10em;
+  margin-top: 25px;
+  letter-spacing: -0.9px;
+}
+.third-para-header-at-ijnck {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f67d48;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+.Counts-section-container-at-home-layout {
+  padding: 25px 10px;
+  display: flex;
+  background: #fafafa;
+  justify-content: center;
+  margin-top: 4em;
+  border-radius: 8px;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+.container-for-sinlge-count-ahome-layout {
+  border-right: 1px solid #eaeaea;
+  text-align: center;
+  padding: 0em 4em;
+}
+.counts-of-new-hdr-sfs {
+  font-size: calc(58px + (60 - 58) * ((100vw - 500px) / (1440 - 320)));
+  letter-spacing: 0px;
+}
+.para-at-count-at-about {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #666;
+  padding-top: 5px;
+}
+.widtgh-fr-dms-center-layout {
+  width: 80em;
+}
+.display-flx-with-about-dems-andblx {
+  margin-top: 8em;
+  display: flex;
+  margin-bottom: 4em;
+  gap: 5em;
+}
+.flx-in-of-hder-and-line {
+  display: flex;
+  gap: 1em;
+}
+.about-hdr-at-in-jka {
+  color: #fff;
+  width: 12em;
+}
+.line-btwn-about-and-dhdr {
+  height: 2px;
+  width: 10em;
+  background: #fff;
+  margin-top: 1em;
+}
+.with-backgrnd-blck {
+  background: #0c0a00;
+  margin-top: 8em;
+}
+.width-for-left-section-at-sjk {
+  width: 50em;
+}
+.hdr-aof-htwo-tag-at-about-sec {
+  font-size: 80px;
+  padding: 0em 0px 30px 0px;
+  letter-spacing: -3px;
+  color: #ffffff;
+  margin-top: -20px;
+}
+.para-at-about-sec-of-home-paly {
+  font-size: 26px;
+  padding: 0em 0em 0.5em 0em;
+  margin-top: 25px;
+  letter-spacing: -0.9px;
+  color: #b5b5b5;
+}
+.contac-us-page-btn-cta-sjm {
+  box-shadow: 0 0 25px #fec1958c;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  padding: 15px 45px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  margin: 35px;
+}
+.margin-noleft {
+  margin-left: 0px;
+}
+.display-block-btns-of-call-back-and-contact {
+  display: none;
+}
+.efioefkls-esolk-dsk {
+  margin-top: 5em;
+  display: flex;
+  margin-bottom: 8em;
+  justify-content: center;
+}
+.flx-section-wihtjd {
+  width: 80em;
+  display: flex;
+  justify-content: space-between;
+  gap: 5em;
+}
+.flx-with-img-and-hdr-and-para {
+  display: block;
+  gap: 25px;
+}
+.flx-fr-im-of-hwye-dis {
+  display: flex;
+  justify-content: center;
+}
+.border-for-backgrnd-img-left {
+  width: 4.5em;
+  border-radius: 10px;
+  height: 4.5em;
+  margin-bottom: 1em;
+  background: #f67d48;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.hdr-at-three-section-of-why {
+  letter-spacing: -1px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+.para-at-three-section-of-why-choose-us {
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 0.8em;
+  text-align: center;
+}
+
+/* ------------ Careers page ----------  */
+
+.background-for-carees-page-at-isdkjs {
+  /* background-image: url("../public/blurred-soft-people-meeting-table-business-people-talking-modern-office-generative-ai.jpg"); */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.header-of-careers-and-other-pages-of-insd {
+  font-size: 4em;
+  z-index: 100;
+  color: #fff;
+  margin-top: 1.5em;
+}
+
+.backgd-fr-blck-inks {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #00000082;
+  position: fixed;
+  top: 100px;
+}
+
+.new-pading-for-tops-sjx {
+  padding-top: 2em;
+}
+
+.bac-white-at-carees-bottom-sh {
+  background: #fff;
+  /* margin-top: 20em; */
+}
+
+.new-para-for-careers-afor-more-onfro {
+  padding-bottom: 1em;
+  font-size: 20px;
+}
+
+.white-back-grnd-ahjhj {
+  background: #fff;
+}
+
+.container-for-contact-us-form {
+  background: #fff;
+  width: 30em;
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  border-radius: 8px;
+  padding: 30px 30px;
+}
+.header-for-contact-us-form {
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+.container-for-inputs {
+  margin-top: 5px;
+}
+.btn-for-submit-at-contact-screen {
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 5px;
+  background: #f67d48;
+  padding: 10px 0px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  margin-top: 15px;
+  color: #fff;
+}
+.flx-in-modal-insputs-at-sections-j {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.text-area-for-message-jsd {
+  width: 420px;
+  height: 160px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  max-width: 500px;
+  max-height: 160px;
+  padding: 15px;
+  font-size: 16px;
+  min-width: 420px;
+  min-height: 160px;
+  margin-top: 5px;
+}
+
+/* ----------- Contact Us ---------- */
+
+.main-divison-box-for-contacts-at-box-amial-s {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  width: 80em;
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  border-radius: 8px;
+  padding: 30px 30px;
+  margin-top: 3em;
+  border: 8px solid rgba(64, 60, 67, 0.16);
+}
+
+.main-width-for-enter-ineer-box-sj {
+  width: 26em;
+}
+
+.flx-in-for-img-in-cntct-boc-sj {
+  display: flex;
+  justify-content: center;
+}
+
+.flx-at-text-center-ins-shskn {
+  text-align: center;
+  line-height: 30px;
+}
+
+.fr-mrgin-tp-at-ctnt-bx {
+  margin-top: 1em;
+}
+
+.main-box-of-ctnct-info-inpts-and-cnt {
+  border-radius: 8px;
+  display: flex;
+  margin-top: 5em;
+  margin-bottom: 3em;
+}
+
+.first-bx-f-left-ctn-dhjd {
+  background: #f67d48;
+  width: 41em;
+  padding: 30px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.left-text-content-at-cnt-bx {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 55px;
+  margin-bottom: 0.6em;
+  color: #fff;
+  padding-top: 30px;
+}
+.right-bx-of-a-inouts-iand-sjm {
+  padding: 0px 30px 0px 30px;
+}
+.fnt-sz-fr-cnt-us-akjd {
+  font-size: 32px;
+}
+
+.uyjs-sks-acs-wsdcsd-dc {
+  padding: 10px 0px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000a1;
+}
+
+.brder-at-inpit-and-img-sect-isn {
+  border-radius: 5px;
+  display: flex;
+  padding: 0px 15px 0px 0px;
+  gap: 1em;
+  border: 2px solid #e9ebef;
+  width: 25em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pad-top-akfkdos-fdk {
+  margin-top: 1em;
+}
+
+.input-fr-cnt-aph-snd {
+  border: none;
+  font-size: 21px;
+  width: 100%;
+  padding: 15px;
+}
+
+.flx-in-input-at-cntx-btn-snd {
+  display: flex;
+  gap: 2em;
+}
+
+.for-textarea-at-cntx-sksjd {
+  width: 781px;
+  height: 160px;
+  border: none;
+  border-radius: 5px;
+  max-width: 500px;
+  max-height: 160px;
+  padding: 15px;
+  font-size: 16px;
+  min-width: 781px;
+  min-height: 160px;
+}
+
+.fr-dsks-sjkds-mcks-vmk {
+  display: flex;
+  width: 100%;
+  border: 2px solid #e9ebef;
+  margin-top: 1.5em;
+  border-radius: 5px;
+}
+
+.jhdes-fr-panc-sdk {
+  margin-top: 15px;
+}
+
+.send-msg-btn-st-ancjs-bcks {
+  padding: 20px 50px;
+  border-radius: 5px;
+  border: 1px solid #f67d48;
+  font-size: 18px;
+  color: #fff;
+  box-shadow: 0 0 0 #fec1958c;
+  display: block;
+  cursor: pointer;
+  background: #f67d48;
+  margin-top: 1em;
+}
+
+.fr-mrgin-tp-sddjvdm {
+  margin-top: 3em;
+}
+
+.esr-white-line-in-side-ak {
+  border-left: 5px solid #fff;
+  padding: 0px 0px 0px 30px;
+  margin-top: 150px;
+}
+.no-margintipdj {
+  margin-top: 0em;
+}
+
+/* ------------ Service Page --------  */
+.flx-fr-center-layout-at-cnt {
+  display: flex;
+  justify-content: center;
+}
+.aling-bottomkdnc {
+  padding-top: 6em;
+}
+.header-at-contact-us-screen-layout {
+  letter-spacing: -3px;
+  color: #171717;
+  font-size: 60px;
+  line-height: 80px;
+}
+.background-litj-bl-in-front-for-contact-us-creen {
+  height: 27rem;
+  background: #f5f5f5;
+}
+.para-at-contact-us-screen-layout {
+  letter-spacing: 0.2px;
+  color: #666;
+  font-size: 20px;
+  padding-top: 15px;
+  line-height: 28px;
+}
+.para-at-contact-for-mobile-only-at-sevice {
+  display: none;
+}
+.margin-left-zero-at-btn {
+  margin-left: 0px;
+}
+.header-at-service-page-secound-header {
+  font-size: 52px;
+  text-align: center;
+  letter-spacing: -2.5px;
+}
+.para-at-service-page-secound-para {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 15px;
+  letter-spacing: -0.2px;
+  width: 55em;
+  line-height: 28px;
+}
+
+.faq-answer-at-faq-sectionsk {
+  font-size: 18px;
+  line-height: 30px;
+}
+.extralagreg-font {
+  font-size: 36px;
+  letter-spacing: -2.5px;
+}
+.contain-of-both-header-and-contact-form {
+  display: flex;
+  justify-content: space-between;
+  width: 80em;
+  margin-top: 7em;
+}
+.gap-property {
+  gap: 5em;
+}
+
+.font-nd-lnth-andkj {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+}
+
+.padd-top-at-service-page-in-sect {
+  padding-top: 25px;
+}
+
+.continer-of-inputs-at-contact-us-form {
+  padding-top: 25px;
+}
+.terms-and-privacy-text-ahdjsn {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.pad-top-low {
+  padding-top: 4em;
+}
+
+.widht-fr-left-rigt-img-snd {
+  width: 600px;
+  height: 100%;
+}
+
+.widht-jr-kjhj-sjmf-wkams {
+  width: 635px;
+  height: 100%;
+}
+
+.widht-jr-sdvlsksd-kvmlsmc {
+  width: 600px;
+  height: 100%;
+}
+
+.flx-in-nt-ckks-img {
+  width: 350px;
+  height: 350px;
+  margin-top: 30px;
+}
+
+.tp-moblr-skjdo {
+  margin-top: 0em;
+}
+
+.img-fr-careees-page-at-cckjsd {
+  width: 600px;
+  height: 100%;
+}
+/* -------    Style starts for Responsive -----------  */
+@media (min-width: 320px) and (max-width: 452px) {
+  .layout-box-fr-navigation-sub-bx {
+    width: 100%;
+    padding: 0px 15px;
+    background: #f67d48;
+  }
+
+  .ul-list-for-navtion-at-home-screen-ajk {
+    display: none;
+  }
+  .btn-at-homepage-navbar-jsd {
+    display: none;
+  }
+  .display-none-at-hamburger-iohs {
+    display: block;
+  }
+  .lets-connect-atmobile-view-sect {
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 25px #fec1958c;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    margin: 0px 0px 35px 0px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+  }
+  .displayflexat-ns {
+    display: block;
+  }
+  .header-layout-at-main-section {
+    width: 100%;
+    padding: 50px 15px 0px 15px;
+  }
+  .container-for-contact-us-form {
+    width: 100%;
+    margin-top: 4em;
+    padding: 20px;
+  }
+  .header-for-contact-us-form {
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: -2px;
+  }
+  .flx-in-modal-insputs-at-sections-j {
+    padding: 15px 15px;
+    display: block;
+  }
+  .text-area-for-message-jsd {
+    width: 100%;
+    max-width: 100%;
+    max-height: 160px;
+    padding: 15px;
+    font-size: 16px;
+    min-width: 100%;
+    min-height: 160px;
+  }
+  .hone-large-title-fr-hdr-in-main-layout {
+    font-size: 28px;
+    text-align: left;
+    letter-spacing: -1px;
+    line-height: 40px;
+  }
+
+  .only-center-this-dhr {
+    text-align: center;
+  }
+  .para-at-main-layout-atnew-sec {
+    padding: 0px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+  .third-para-header-at-ijnck {
+    font-size: 16px;
+    padding-bottom: 1em;
+  }
+  .Counts-section-container-at-home-layout {
+    display: block;
+    padding: 0px;
+  }
+  .container-for-sinlge-count-ahome-layout {
+    border-bottom: 1px solid #eaeaea;
+    border-right: none;
+    padding: 1em 4em;
+  }
+  .widtgh-fr-dms-center-layout {
+    width: 100%;
+  }
+  .display-flx-with-about-dems-andblx {
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+  .flx-in-of-hder-and-line {
+    display: block;
+    padding: 15px;
+  }
+  .about-hdr-at-in-jka {
+    color: #fff;
+    text-align: left;
+    padding-top: 2em;
+    width: 100%;
+    font-size: 20px;
+  }
+  .line-btwn-about-and-dhdr {
+    display: none;
+  }
+  .with-backgrnd-blck {
+    margin-top: 50px;
+  }
+  .width-for-left-section-at-sjk {
+    width: 100%;
+  }
+  .hdr-aof-htwo-tag-at-about-sec {
+    padding: 0px 15px 15px 15px;
+    font-size: 42px;
+    padding-left: 15px;
+    margin-top: 0;
+    text-align: left;
+    letter-spacing: -1.5px;
+  }
+  .para-at-about-sec-of-home-paly {
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 0px;
+    letter-spacing: 0.5px;
+    color: #b5b5b5;
+    text-align: left;
+    line-height: 30px;
+  }
+  .contac-us-page-btn-cta-sjm {
+    margin: 35px 0px;
+    padding: 15px;
+    font-size: 16px;
+    display: none;
+  }
+  .display-block-btns-of-call-back-and-contact {
+    display: block;
+  }
+  .padobjdsosdv-sk {
+    padding: 15px;
+  }
+  .efioefkls-esolk-dsk {
+    margin-top: 2em;
+    margin-bottom: 0em;
+  }
+  .flx-with-img-and-hdr-and-para {
+    display: block;
+  }
+  .border-for-backgrnd-img-left {
+    width: 5em;
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+  .para-at-three-section-of-why-choose-us {
+    line-height: 26px;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 2em;
+  }
+  .header-at-contact-us-screen-layout {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 15px;
+  }
+  .background-litj-bl-in-front-for-contact-us-creen {
+    height: 100%;
+  }
+  .para-at-contact-us-screen-layout {
+    display: none;
+  }
+  .para-at-contact-for-mobile-only-at-sevice {
+    display: block;
+    letter-spacing: 0.2px;
+    color: #666;
+    font-size: 16px;
+    padding-bottom: 30px;
+    line-height: 28px;
+    padding-left: 15px;
+  }
+  .margin-left-zero-at-btn {
+    margin-left: 15px;
+  }
+  .header-at-service-page-secound-header {
+    font-size: 36px;
+    text-align: left;
+    letter-spacing: -2px;
+    padding-left: 15px;
+  }
+  .para-at-service-page-secound-para {
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+  }
+  .contain-of-both-header-and-contact-form {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 0em;
+  }
+  .font-nd-lnth-andkj {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    line-height: 28px;
+  }
+  .padd-top-at-service-page-in-sect {
+    padding-top: 15px;
+  }
+  .flx-of-two-coloms-in-mainsection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .flx-direction-of-number-of-achivements {
+    display: block;
+  }
+  .flx-direction--at-numbers-section-sffa {
+    display: block;
+    margin-top: 30px;
+  }
+  .flx-for-misson-and-vison-section-area {
+    display: block;
+  }
+  .flx-direction-for-third-scound-section {
+    display: block;
+  }
+  .padd-inde-sjkds {
+    display: block;
+  }
+  .flxin-for-sdfg {
+    display: block;
+  }
+  .flx-in-use-full-loink-and-servoces {
+    display: block;
+  }
+  .dis-dss-sddjk-webksd-zcnd {
+    display: block;
+  }
+  .wid-sjdkf-wfw-wjepfw-rwsd {
+    width: 100%;
+    padding: 0px 15px;
+  }
+  .left-first-image-at-top-section-of-websites-sd {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1em;
+  }
+  .disply-flx-at-buttons-section-at-main {
+    display: block;
+  }
+  .widht-fr-left-rigt-img-snd {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1em;
+  }
+
+  .widht-jr-kjhj-sjmf-wkams {
+    width: 100%;
+    height: 50%;
+  }
+
+  .widht-jr-sdvlsksd-kvmlsmc {
+    width: 100%;
+    height: 50%;
+  }
+  .flx-for-three-rows-in-whatmakesdifferent {
+    display: block;
+    margin-top: 30px;
+  }
+  .flx-in-nt-ckks-img {
+    width: 100%;
+    height: 50%;
+  }
+  .width-large-at-vos {
+    width: 100%;
+  }
+  .small-para-at-contact-i-now-asx {
+    font-size: 16px;
+  }
+  .padding-for-the-adress-and-other-opt-at-footer {
+    padding: 25px 0px 0px 0px;
+  }
+  .header-of-h-one-tag {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .para-of-main-section-at-first {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .header-number-two-at-secound-section {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .para-at-secound-section-who-are-in-main-homepage {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+  .third-section-of-third-para-at-hd {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .header-at-third-section-part-achivemnts {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .got-ques-header-at-faqs {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  .bringyour-header-at-contactsection {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+  .flx-section-wihtjd {
+    width: 100%;
+    display: block;
+    padding: 15px;
+  }
+  .first-bx-f-left-ctn-dhjd {
+    width: 100%;
+    padding: 15px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-bottom: 2em;
+  }
+  .esr-white-line-in-side-ak {
+    padding: 0px 0px 0px 30px;
+    margin-top: 30px;
+  }
+  .main-box-of-ctnct-info-inpts-and-cnt {
+    display: block;
+  }
+  .flx-in-input-at-cntx-btn-snd {
+    display: block;
+  }
+  .for-textarea-at-cntx-sksjd {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .brder-at-inpit-and-img-sect-isn {
+    width: 100%;
+  }
+
+  .contact-us-btn-at-buttons-sections {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 27px;
+    margin-bottom: 1em;
+  }
+  .know-more-btln-at-main-section-home {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 27px;
+  }
+  .ds-none-at-mob-view {
+    display: none;
+  }
+
+  .header-number-two-mobile-view-sect {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -2px;
+    display: block;
+  }
+  .border-section-white-down-at-vison {
+    width: 117px;
+    height: 2px;
+  }
+  .header-of-our-vision-white-clor {
+    font-size: 22px;
+  }
+  .para-at-vision-sjks-sknd {
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .tp-moblr-skjdo {
+    margin-top: 2em;
+    padding-bottom: 50px;
+  }
+  .section-header-at-home-page-view {
+    font-size: 18px;
+  }
+
+  .third-section--header-at-makes-diff {
+    font-size: 26px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+
+  .para-at-third-section-of-whatmakesusdiff {
+    line-height: 24px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  .background-gradient-for-flex-hjsd {
+    margin: 50px 0px 0px 0px;
+    background: linear-gradient(169deg, #f67d48, #fff);
+    padding-bottom: 30px;
+  }
+  .get-in-touch-header-at-sj {
+    font-size: 30px;
+    letter-spacing: -1px;
+    margin-top: 30px;
+  }
+  .doen-para-at-call-us-nwos {
+    font-size: 16px;
+  }
+  .width-large-at-vos {
+    width: 75%;
+    height: 2px;
+  }
+  .white-txt-at-faq-sect {
+    font-size: 17px;
+  }
+
+  .faq-answer-at-faq-sectionsk {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .padding-toop-for-footer {
+    margin-top: 10em;
+  }
+  .container-with-left-border-and-intenal-padd {
+    margin-top: 30px;
+  }
+  .vsion-and-aim-padding-top-extra {
+    padding-top: 0px;
+  }
+  .backgroud-orange-at-fourth-section-in-os {
+    margin-top: 30px;
+  }
+  .extra-padding-for-botom-third-sections {
+    padding-top: 0px;
+  }
+
+  .tp-in-ftr-mobile-view-only {
+    margin-top: 1em;
+  }
+  .pad-left-for-hdr-in-mob {
+    padding: 0px 15px;
+  }
+  .left-text-content-at-cnt-bx {
+    font-size: 45px;
+    line-height: 54px;
+  }
+  .right-bx-of-a-inouts-iand-sjm {
+    padding: 0px;
+  }
+  .send-msg-btn-st-ancjs-bcks {
+    width: 100%;
+  }
+  .fr-mrgin-tp-sddjvdm {
+    margin-top: 1em;
+  }
+  .brder-at-inpit-and-img-sect-isn {
+    margin-bottom: 1em;
+  }
+  .main-divison-box-for-contacts-at-box-amial-s {
+    width: 100%;
+    display: block;
+  }
+  .background-for-carees-page-at-isdkjs {
+    height: 65%;
+    width: 150%;
+  }
+  .backgd-fr-blck-inks {
+    top: 0px;
+  }
+  .new-para-for-careers-afor-more-onfro {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .img-fr-careees-page-at-cckjsd {
+    width: 100%;
+    height: 100%;
+  }
+  .padins-kjdssodic {
+    padding-bottom: 3em;
+  }
+  .header-of-careers-and-other-pages-of-insd {
+    font-size: 30px;
+    z-index: 100;
+    color: #fff;
+    margin-top: 6.5em;
+  }
+  .flx-in-logo-and-links-of-pages {
+    padding-left: 15px;
+  }
+  .main-width-for-enter-ineer-box-sj {
+    width: 100%;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes conditionalOpen {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@-moz-keyframes conditionalOpen {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes conditionalOpen {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes conditionalClose {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+@-moz-keyframes conditionalClose {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+@keyframes conditionalClose {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}

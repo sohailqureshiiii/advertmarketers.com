@@ -1,0 +1,20 @@
+{
+  "name": "advertmarketers.com",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "next": "^13.4.7",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-toastify": "^10.0.0",
+    "sharp": "^0.33.1",
+    "use-count-up": "^3.0.1"
+  }
+}
