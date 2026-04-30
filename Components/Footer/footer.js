@@ -80,7 +80,7 @@ export const Footer = () => {
                       </Link>
                     </div>{" "}
                     <div className="links-name-at-footer-secctions-djs">
-                      <Link href="/isocertificates">ISO Certified</Link>
+                      <Link href="/isocertificates">ISO Certifications</Link>
                     </div>
                   </div>
                 </div>
