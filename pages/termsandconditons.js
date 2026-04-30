@@ -54,7 +54,7 @@ const termsandconditons = () => {
       </div>
       <div>
         <div className="bac-white-at-carees-bottom-sh">
-          <div className="displayflexat-ns " style={myFont.style}>
+          <div className="displayflexat-ns adhujw-awdojkm" style={myFont.style}>
             <div className="header-layout-at-main-section">
               <h4
                 className="section-header-at-home-page-view new-pading-for-tops-sjx"

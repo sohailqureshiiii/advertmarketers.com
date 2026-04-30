@@ -78,6 +78,9 @@ export const Footer = () => {
                         Data Access & <br />
                         Data Rectification
                       </Link>
+                    </div>{" "}
+                    <div className="links-name-at-footer-secctions-djs">
+                      <Link href="/isocertificates">ISO Certified</Link>
                     </div>
                   </div>
                 </div>

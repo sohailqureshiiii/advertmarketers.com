@@ -44,8 +44,8 @@ const Dataaccessdatarectification = () => {
         />
       </div>
       <div style={myFont.style} className="backgd-fr-blck-inks">
-        <div className="displayflexat-ns " style={myFont.style}>
-          <div className="header-layout-at-main-section">
+        <div className="displayflexat-ns adhujw-awdojkm" style={myFont.style}>
+          <div className="header-layout-at-main-section ">
             <h2 className="header-of-careers-and-other-pages-of-insd">
               {" "}
               Data Access & Data Rectification
@@ -55,7 +55,7 @@ const Dataaccessdatarectification = () => {
       </div>
       <div className="bac-white-at-carees-bottom-sh">
         <div className="displayflexat-ns " style={myFont.style}>
-          <div className="header-layout-at-main-section">
+          <div className="header-layout-at-main-section adhujw-awdojkm">
             <h4
               className="section-header-at-home-page-view new-pading-for-tops-sjx"
               data-aos="fade-down"

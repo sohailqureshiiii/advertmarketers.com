@@ -7,6 +7,7 @@ import MediaAgencies from "../public/mediaagencies.jpg";
 import Business from "../public/handshake-close-up-executives.jpg";
 import TechCompo from "../public/person-working-with-floating-screens.jpg";
 import Caontatc from "../public/dfghnm.jpg";
+import ISO from "../public/whitebackgroundisocertificate.png";
 import { useEffect, useState } from "react";
 import localFont from "next/font/local";
 import { Footer } from "@/Components/Footer/footer";
@@ -542,6 +543,74 @@ export default function Home() {
           </div>
         </div>{" "}
       </div>
+      <>
+        <div className="scrolling_text" style={myFont.style}>
+          <div className="text">
+            <Image
+              src={ISO}
+              width={450}
+              height={250}
+              className="defgtr-fsdgtsd"
+            />
+            <Image
+              src={ISO}
+              width={450}
+              height={250}
+              className="defgtr-fsdgtsd"
+            />{" "}
+            <Image
+              src={ISO}
+              width={450}
+              height={250}
+              className="defgtr-fsdgtsd"
+            />{" "}
+            <Image
+              src={ISO}
+              width={450}
+              height={250}
+              className="defgtr-fsdgtsd"
+            />{" "}
+            <Image
+              src={ISO}
+              width={450}
+              height={250}
+              className="defgtr-fsdgtsd"
+            />
+          </div>{" "}
+          <div className="text">
+            <Image
+              src={ISO}
+              width={450}
+              height={250}
+              className="defgtr-fsdgtsd"
+            />
+            <Image
+              src={ISO}
+              width={450}
+              height={250}
+              className="defgtr-fsdgtsd"
+            />{" "}
+            <Image
+              src={ISO}
+              width={450}
+              height={250}
+              className="defgtr-fsdgtsd"
+            />{" "}
+            <Image
+              src={ISO}
+              width={450}
+              height={250}
+              className="defgtr-fsdgtsd"
+            />{" "}
+            <Image
+              src={ISO}
+              width={450}
+              height={250}
+              className="defgtr-fsdgtsd"
+            />
+          </div>
+        </div>
+      </>
       <div data-aos="fade-up">
         <Footer />
       </div>
