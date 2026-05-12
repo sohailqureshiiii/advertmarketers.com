@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import { Navbar } from "@/Components/Navigation/Navbar";
 import React, { useEffect } from "react";
 import localFont from "next/font/local";
@@ -11,7 +12,10 @@ import Image from "next/image";
 import { Footer } from "@/Components/Footer/footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import NewContactForm from "@/Components/NewContactForm/newContactForm";
+const NewContactForm = dynamic(
+  () => import("@/Components/NewContactForm/newContactForm"),
+  { ssr: false }
+);
 import Head from "next/head";
 
 const contactus = () => {

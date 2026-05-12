@@ -15,33 +15,71 @@ import { ToastContainer } from "react-toastify";
 const NewContactForm = () => {
   const [fullName, setFullName] = useState("");
   const [bussinessEmail, setBussinessEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [jobTitle, setJobTitle] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
 
   const onSubmit = async (e) => {
-    const values = {
-      // message,
-      fullName,
-      bussinessEmail,
-      phoneNumber,
-      jobTitle,
-    };
+    e.preventDefault();
+    if (isSubmitting) return;
+    setIsSubmitting(true);
     try {
-      await sendContactForm(values);
+      console.log("Submitting form with data:", { fullName, bussinessEmail, subject, message });
+      if (!fullName || !bussinessEmail || !subject) {
+        console.log("Validation failed: Missing required fields");
+        toast.error("Please fill in all required fields.", {
+          position: "top-right"
+        });
+        return;
+      }
 
-      toast.success("Your message has been sent successfully!", {
-        position: "top-right",
-        autoClose: 2000, // Time in milliseconds
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
+
+
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ fullName, bussinessEmail, subject, message }),
       });
+      const json = await res.json();
+
+
+      if (json.message) {
+        toast.success(json.message, {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      } else {
+        toast.error(json.message || (res.ok ? "We have received your details and will contact you soon." : "Failed to send message."), {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
+
+      if (res.ok) {
+        setFullName("");
+        setBussinessEmail("");
+        setSubject("");
+        setMessage("");
+      }
     } catch (error) {
-      console.log("error while submitting");
+      console.log("error while submitting", error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
+
+
 
   return (
     <>
@@ -98,9 +136,9 @@ const NewContactForm = () => {
                 placeholder="Subject"
                 style={myFont.style}
                 className="input-fr-cnt-aph-snd"
-                value={phoneNumber}
+                value={subject}
                 onChange={(e) => {
-                  setPhoneNumber(e.target.value);
+                  setSubject(e.target.value);
                 }}
               />
             </div>
@@ -108,9 +146,9 @@ const NewContactForm = () => {
               <textarea
                 placeholder="Write Message"
                 className="for-textarea-at-cntx-sksjd"
-                value={jobTitle}
+                value={message}
                 onChange={(e) => {
-                  setJobTitle(e.target.value);
+                  setMessage(e.target.value);
                 }}
               />
               <Image src={Chat} className="jhdes-fr-panc-sdk" />
@@ -121,12 +159,14 @@ const NewContactForm = () => {
               onClick={(e) => {
                 onSubmit(e);
               }}
+              disabled={isSubmitting}
             >
-              Send Message
+              {isSubmitting ? "Sending..." : "Send Message"}
             </button>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 };
