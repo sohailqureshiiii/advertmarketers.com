@@ -91,11 +91,11 @@ const IsoCertificates = () => {
                 Privacy Information Management System - Requirements and
                 guidance )
               </p>
-              <div className="awdkad-awjkenad-awdajdknm">
+              {/* <div className="awdkad-awjkenad-awdajdknm">
                 <Image src={CertificateOne} className="aduj-wjdadmacawadfa" />
                 <Image src={CertificateTwo} className="aduj-wjdadmacawadfa" />
                 <Image src={CertificateThree} className="aduj-wjdadmacawadfa" />
-              </div>
+              </div> */}
             </div>
           </div>{" "}
         </div>

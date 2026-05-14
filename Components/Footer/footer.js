@@ -67,10 +67,10 @@ export const Footer = () => {
                     <div className="links-name-at-footer-secctions-djs">
                       <Link href="/policies">Our Policies</Link>
                     </div>
-                    <div className="links-name-at-footer-secctions-djs">
+                    {/* <div className="links-name-at-footer-secctions-djs">
                       <Link href="/gdpr">GDPR</Link>
-                    </div>
-                    <div className="links-name-at-footer-secctions-djs">
+                    </div> */}
+                    {/* <div className="links-name-at-footer-secctions-djs">
                       <Link href="/termsandconditons">Terms & Conditions</Link>
                     </div>
                     <div className="links-name-at-footer-secctions-djs">
@@ -78,7 +78,7 @@ export const Footer = () => {
                         Data Access & <br />
                         Data Rectification
                       </Link>
-                    </div>{" "}
+                    </div> */}
                     <div className="links-name-at-footer-secctions-djs">
                       <Link href="/isocertificates">ISO Certifications</Link>
                     </div>
