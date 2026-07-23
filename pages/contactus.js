@@ -60,7 +60,7 @@ const contactus = () => {
         </div>{" "}
       </div>
       <div className="bac-white-at-carees-bottom-sh">
-        {/* <div className="displayflexat-ns " style={myFont.style}>
+        <div className="displayflexat-ns " style={myFont.style}>
           <div className="header-layout-at-main-section">
             <div
               className="main-divison-box-for-contacts-at-box-amial-s"
@@ -85,11 +85,10 @@ const contactus = () => {
                 </div>
                 <div className="fr-mrgin-tp-at-ctnt-bx">
                   <p className="flx-at-text-center-ins-shskn">
-                    India Address Office 1 – Office Number 504, Pentagon Tower
-                    04, Magarpatta City, Pune – 411028
-                    <br />
-                    1267 Willis St., STE 200, Redding, California 96001 United
-                    States
+                    - Office Number 102, Pentagon Tower 03, Magarpatta City,
+                    Pune – 411028.
+                    <br />- 1267 Willis St., STE 200, Redding, California 96001
+                    United States
                   </p>
                 </div>
               </div>
@@ -98,13 +97,17 @@ const contactus = () => {
                   <Image src={Phone} />
                 </div>
                 <div className="fr-mrgin-tp-at-ctnt-bx">
-                  <p className="flx-at-text-center-ins-shskn">+91 8999464197</p>
-                  <p className="flx-at-text-center-ins-shskn">+91 7083235282</p>
+                  <p className="flx-at-text-center-ins-shskn">
+                    +91 89994 64197
+                  </p>
+                  <p className="flx-at-text-center-ins-shskn">
+                    +91 80871 44552
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
         <div className="displayflexat-ns " style={myFont.style}>
           <div className="header-layout-at-main-section">
             <NewContactForm />
