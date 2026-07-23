@@ -60,7 +60,7 @@ const contactus = () => {
         </div>{" "}
       </div>
       <div className="bac-white-at-carees-bottom-sh">
-        <div className="displayflexat-ns " style={myFont.style}>
+        {/* <div className="displayflexat-ns " style={myFont.style}>
           <div className="header-layout-at-main-section">
             <div
               className="main-divison-box-for-contacts-at-box-amial-s"
@@ -91,10 +91,6 @@ const contactus = () => {
                     1267 Willis St., STE 200, Redding, California 96001 United
                     States
                   </p>
-                  {/* <p className="flx-at-text-center-ins-shskn">
-                    USA Address 1267 Willis St., STE 200, Redding, California
-                    96001 United States
-                  </p> */}
                 </div>
               </div>
               <div className="main-width-for-enter-ineer-box-sj">
@@ -108,7 +104,7 @@ const contactus = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="displayflexat-ns " style={myFont.style}>
           <div className="header-layout-at-main-section">
             <NewContactForm />
